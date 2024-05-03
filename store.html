@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeoby Shop</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+      }
+      html {
+        font-family: 'Nanum Gothic', sans-serif;
+      }
+      nav {
+        background-color: rgb(239, 240, 234);
+        width: 100%;
+        height: 80px;
+        position: sticky;
+        top: 0px;
+      }
+      nav li {
+        display: inline;
+        margin: 0 8px;
+        line-height: 80px;
+      }
+      nav a {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        padding: 10px;
+      }
+      a:hover {
+        color: rgb(172, 172, 172);
+      }
+      .logo {
+        width: 80px;
+        float: left;
+      }
+
+      .background {
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(255, 255, 255);
+      }
+      .store-title {
+        /* margin-top: 100px; */
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-bottom: 20px;
+      }
+      .store-panel {
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+      }
+      .item {
+        border: 3px solid rgb(255, 255, 255);
+        margin-left: 50px;
+        width: 150px;
+        height: 150px;
+        background-image: url('./yeobyshop.png');
+        background-size: cover;
+        transition: 0.5s ease-out;
+        display: inline-block;
+      }
+      .item > p {
+        padding-top: 155px;
+        text-align: center;
+      }
+      .item:hover {
+        border: 3px solid rgb(117, 117, 117);
+      }
+      .footer {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(239, 240, 234);
+      }
+      .footer > p {
+        text-align: center;
+      }
+    </style>
+    <body>
+      <nav>
+        <ul>
+          <img class="logo" src="./yeobyshop.png" alt="yeobyshop" />
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./store.html">Store</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="background">
+          <h2 class="store-title">STORE</h2>
+          <hr />
+          <div class="store-panel">
+            <div class="item">
+              <p>GS25_앞에서.mp4</p>
+            </div>
+            <div class="item">
+              <p>잼민엽_버스에서.jpg</p>
+            </div>
+            <div class="item">
+              <p>item</p>
+            </div>
+            <div class="item">
+              <p>item</p>
+            </div>
+            <div class="item">
+              <p>item</p>
+            </div>
+            <div class="item">
+              <p>item</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer">
+          <p>copyright ⓒ 강인엽 all rights resvered.</p>
+        </div>
+      </footer>
+    </body>
+  </head>
+</html>
