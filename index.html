@@ -3,133 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yeoby Shop</title>
-
-    <!-- meta -->
-    <meta property="og:url" content="https://yeobyshop.000webhostapp.com/" />
-    <meta property="og:title" content="Yeoby Shop | 여비샵" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://yeobyshop.000webhostapp.com/yeobyshop.png" />
-    <meta property="og:description" content="여비샵 | 마법소녀 강인엽 굿즈샵" />
-
+    <!-- 브라우저 테마 색상 설정 -->
+    <meta name="theme-color" content="#f1efe7" />
+    <link rel="shortcut icon" href=".//assets/images/yeobyshop.ico" />
+    <title>Yeobyshop</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
       * {
-        padding: 0;
         margin: 0;
-        list-style: none;
-        text-decoration: none;
+        padding: 0;
       }
       html {
         font-family: 'Nanum Gothic', sans-serif;
+        font-size: 18px;
       }
-      nav {
-        background-color: rgb(241, 239, 231);
-        width: 100%;
-        height: 70px;
-        top: 0px;
-        position: sticky;
-      }
-      nav li {
-        display: inline;
-        margin: 0 8px;
-        line-height: 80px;
-      }
-      nav a {
-        color: rgb(0, 0, 0);
-        font-size: 20px;
-        padding: 10px;
-      }
-      a:hover {
-        color: rgb(172, 172, 172);
-      }
-      .logo {
-        width: 70px;
-        float: left;
-      }
-      .background-image {
-        width: 100%;
-        height: 1000px;
-        background-image: url(./yeop.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        /* z-index: 0; */
-      }
-      .background-image > .intro,
-      .background-image > h1 {
-        color: white;
-        padding-top: 80px;
-        padding-left: 50px;
-        text-shadow: 1px 1px rgb(0, 0, 0);
-        /* overflow-y: scroll; */
-      }
-      .intro {
-        font-size: 20px;
-        line-height: 30px;
-      }
-      .shortcut {
-        max-width: 500px;
-        margin: 20vw 10vw 0 10vw;
-        padding: 10px;
-        border: 1px solid white;
-        color: white;
-        box-shadow: 1px 1px black;
-        background-color: rgba(255, 255, 255, 0.178);
 
-        transition: 0.2s ease-out;
+      /* nav */
+      nav {
+        position: sticky;
+        top: 0px;
       }
-      .shortcut > p {
-        text-align: center;
-        text-shadow: 1px 1px black;
-      }
-      .shortcut:hover {
-        box-shadow: 1px 1px 5px white;
-      }
-      .footer {
-        font-size: 16px;
-        width: 100%;
-        height: 50px;
+      .nav-container {
+        display: flex;
         background-color: rgb(241, 239, 231);
+        list-style: none;
+        align-items: center;
+        user-select: none;
       }
-      .footer > .footer-panel > p {
+      .nav-item {
+        padding: 15px 25px;
+        cursor: pointer;
+        transition: 0.5s ease-out;
+      }
+      .nav-item a {
         text-align: center;
+        text-decoration: none;
+        color: black;
       }
-      .footer-panel {
-        padding-top: 10px;
-        padding-left: 10px;
+      .nav-item:hover {
+        background-color: rgb(207, 206, 199);
+      }
+      .nav-item-logo {
+        padding: 5px 25px;
+      }
+      .img-logo {
+        width: 120px;
+      }
+
+      /* main */
+      .main-container {
+        padding: 8vw 8vh;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background: url('./assets/images/yeop.jpg') no-repeat center;
+        background-size: cover;
+
+        color: white;
+        text-shadow: 1px 1px 5px black;
+        /* background-attachment: fixed; */
+      }
+
+      /* footer */
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(241, 239, 231);
+        list-style: none;
+        align-items: center;
+        user-select: none;
+        align-items: center;
+      }
+      .footer-item {
+        padding: 10px;
+        padding-top: 20px;
+        align-self: center;
+        color: rgb(82, 82, 82);
+        font-size: 14px;
       }
     </style>
   </head>
   <body>
     <nav>
-      <ul>
-        <img class="logo" src="./yeobyshop.png" alt="yeobyshop" />
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./store.html">Store</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="nav-container">
+        <li class="nav-item-logo">
+          <a href="./index.html"
+            ><img class="img-logo" src="./assets/images/yeobyshop_transbg_340_80.png" alt="Yeobyshop"
+          /></a>
+        </li>
+        <li class="nav-item"><a href="./store.html">Store</a></li>
+        <li class="nav-item"><a href="sms:01091850992?body=Yeobyshop 문의입니다.//">Contact</a></li>
       </ul>
     </nav>
+
     <main>
-      <div class="background-image">
-        <h1>여비샵</h1>
-        <p class="intro">
-          경희대학교 박사과정을 지내고 있는<br />
-          강인엽의 Life Style & Fashion, <br />
-          그리고 일거수일투족을 기록합니다.
-        </p>
-        <a href="./store.html"
-          ><div class="shortcut"><p>스토어 방문하기 ></p></div></a
-        >
-      </div>
+      <div class="main-container"></div>
     </main>
+
     <footer>
-      <div class="footer">
-        <div class="footer-panel">
-          <p>copyright ⓒ 강인엽 all rights resvered.</p>
-        </div>
-      </div>
+      <ul class="footer-container">
+        <li class="footer-item">copyright ⓒ 강인엽 all rights resvered.</li>
+      </ul>
     </footer>
   </body>
 </html>
