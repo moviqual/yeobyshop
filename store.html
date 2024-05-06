@@ -13,6 +13,7 @@
     * {
       margin: 0;
       padding: 0;
+      -webkit-tap-highlight-color: transparent;
     }
     html {
       font-family: 'Nanum Gothic', sans-serif;
@@ -51,6 +52,130 @@
       width: 120px;
     }
 
+    /* main */
+    .main-container {
+      display: flex;
+      padding: 4vh 2vw;
+      flex-wrap: wrap;
+    }
+    .item-container {
+      margin: 10px;
+      width: 180px;
+      height: 250px;
+      border: 4px solid rgb(224, 224, 224);
+      background-size: cover;
+      cursor: pointer;
+      flex-wrap: wrap;
+      border-radius: 10px;
+      transition: 0.4s ease-out;
+    }
+    .item-container:hover {
+      background-color: #f1efe7;
+      border-radius: 20px;
+    }
+    .product-line {
+      width: 140px;
+      margin: 10px auto;
+    }
+    .product-image1 {
+      margin: 15px 15px;
+      background-image: url(./assets/images/gs.gif);
+      background-size: cover;
+      background-position: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+    }
+    .product-title1 {
+      margin: 15px;
+      text-align: right;
+      font-size: 16px;
+    }
+    .product-image2 {
+      margin: 15px 15px;
+      background-image: url(./assets/images/girl.png);
+      background-size: cover;
+      background-position: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+    }
+    .product-title2 {
+      margin: 15px;
+      text-align: right;
+      font-size: 16px;
+    }
+    .product-image3 {
+      margin: 15px 15px;
+      background-image: url(./assets/images/bus.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+    }
+    .product-title3 {
+      margin: 15px;
+      text-align: right;
+      font-size: 16px;
+    }
+    .product-image4 {
+      margin: 15px 15px;
+      background-image: url(./assets/images/V.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+    }
+    .product-title4 {
+      margin: 15px;
+      text-align: right;
+      font-size: 16px;
+    }
+    .product-image5 {
+      margin: 15px 15px;
+      background-image: url(./assets/images/morning.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+    }
+    .product-title5 {
+      margin: 15px;
+      text-align: right;
+      font-size: 16px;
+    }
+    .product-image6 {
+      margin: 15px 15px;
+      background-image: url(./assets/images/smile.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+    }
+    .product-title6 {
+      margin: 15px;
+      text-align: right;
+      font-size: 16px;
+    }
+    .product-image7 {
+      margin: 15px 15px;
+      background-image: url(./assets/images/tired.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+    }
+    .product-title7 {
+      margin: 15px;
+      text-align: right;
+      font-size: 16px;
+    }
+
     /* footer */
     .footer-container {
       display: flex;
@@ -73,16 +198,61 @@
     <nav>
       <ul class="nav-container">
         <li class="nav-item-logo">
-          <a href="./index.html"
-            ><img class="img-logo" src="./assets/images/yeobyshop_transbg_340_80.png" alt="Yeobyshop"
-          /></a>
+          <a href="./index.html"><img class="img-logo" src="./assets/images/yeobyshop_transbg_340_80.png" alt="Yeobyshop" /></a>
         </li>
         <li class="nav-item"><a href="./store.html">Store</a></li>
         <li class="nav-item"><a href="sms:01091850992?body=Yeobyshop 문의입니다.//">Contact</a></li>
       </ul>
     </nav>
 
-    <main></main>
+    <main>
+      <div class="main-container">
+        <div class="item-container">
+          <a href="#"></a>
+          <div class="product-image1"></div>
+          <hr class="product-line" />
+          <p class="product-title1">재롱떠는 강인엽 모음</p>
+        </div>
+
+        <div class="item-container">
+          <a href="#"></a>
+          <div class="product-image2"></div>
+          <hr class="product-line" />
+          <p class="product-title2">여자로 환생한<br />여혐러 인엽</p>
+        </div>
+
+        <div class="item-container">
+          <a href="#"></a>
+          <div class="product-image3"></div>
+          <hr class="product-line" />
+          <p class="product-title3">강인엽 성형 전 유출</p>
+        </div>
+        <div class="item-container">
+          <a href="#"></a>
+          <div class="product-image4"></div>
+          <hr class="product-line" />
+          <p class="product-title4">쁘인엽</p>
+        </div>
+        <div class="item-container">
+          <a href="#"></a>
+          <div class="product-image5"></div>
+          <hr class="product-line" />
+          <p class="product-title5">미라클 모닝 인엽이</p>
+        </div>
+        <div class="item-container">
+          <a href="#"></a>
+          <div class="product-image6"></div>
+          <hr class="product-line" />
+          <p class="product-title6">당일도축 뭉티기<br />기다리는 인엽이</p>
+        </div>
+        <div class="item-container">
+          <a href="#"></a>
+          <div class="product-image7"></div>
+          <hr class="product-line" />
+          <p class="product-title7">피곤한 대학원생<br />인엽이</p>
+        </div>
+      </div>
+    </main>
 
     <footer>
       <ul class="footer-container">
