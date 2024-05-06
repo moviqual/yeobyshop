@@ -6,227 +6,16 @@
     <!-- 브라우저 테마 색상 설정 -->
     <meta name="theme-color" content="#f1efe7" />
     <link rel="shortcut icon" href=".//assets/images/yeobyshop.ico" />
+    <link rel="stylesheet" href="style-store.css" />
     <title>Yeobyshop | Store</title>
   </head>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
-    * {
-      margin: 0;
-      padding: 0;
-      -webkit-tap-highlight-color: transparent;
-    }
-    html {
-      font-family: 'Nanum Gothic', sans-serif;
-      font-size: 18px;
-      background-color: rgb(241, 239, 231);
-    }
-
-    /* nav */
-    nav {
-      position: sticky;
-      top: 0px;
-    }
-    .nav-container {
-      display: flex;
-      background-color: rgb(241, 239, 231);
-      list-style: none;
-      align-items: center;
-      user-select: none;
-    }
-    .nav-item {
-      padding: 15px 25px;
-      cursor: pointer;
-      transition: 0.5s ease-out;
-    }
-    .nav-item a {
-      text-align: center;
-      text-decoration: none;
-      color: black;
-    }
-
-    .nav-item:hover {
-      background-color: rgb(207, 206, 199);
-    }
-    .nav-item-logo {
-      padding: 10px 25px;
-      transition: 0.1s ease-out;
-    }
-    .nav-item-logo:hover {
-      background-color: rgb(255, 83, 203);
-    }
-    .img-logo {
-      width: 120px;
-    }
-
-    /* main */
-    .main-container {
-      display: flex;
-      padding: 4vh 2vw;
-      /* height: 80vh; */
-      flex-wrap: wrap;
-      background-color: white;
-    }
-    .item-container {
-      margin: 10px;
-      width: 180px;
-      height: 250px;
-      border: 4px solid rgb(224, 224, 224);
-      background-size: cover;
-      cursor: pointer;
-      flex-wrap: wrap;
-      border-radius: 10px;
-      transition: 0.4s ease-out;
-    }
-    .item-container:hover {
-      background-color: #f1efe7;
-      border-radius: 20px;
-    }
-    .product-line {
-      width: 140px;
-      height: 2px;
-      border: 0;
-      margin: 10px auto;
-      background-color: rgb(224, 224, 224);
-    }
-    .product-image1 {
-      margin: 15px 15px;
-      background-image: url(./assets/images/gs.gif);
-      background-size: cover;
-      background-position: center;
-      width: 150px;
-      height: 150px;
-      border-radius: 20px;
-    }
-    .product-title1 {
-      margin: 15px;
-      text-align: right;
-      font-size: 16px;
-    }
-    .product-image2 {
-      margin: 15px 15px;
-      background-image: url(./assets/images/girl.png);
-      background-size: cover;
-      background-position: center;
-      width: 150px;
-      height: 150px;
-      border-radius: 20px;
-    }
-    .product-title2 {
-      margin: 15px;
-      text-align: right;
-      font-size: 16px;
-    }
-    .product-image3 {
-      margin: 15px 15px;
-      background-image: url(./assets/images/bus.jpg);
-      background-size: cover;
-      background-position: center;
-      width: 150px;
-      height: 150px;
-      border-radius: 20px;
-    }
-    .product-title3 {
-      margin: 15px;
-      text-align: right;
-      font-size: 16px;
-    }
-    .product-image4 {
-      margin: 15px 15px;
-      background-image: url(./assets/images/V.jpg);
-      background-size: cover;
-      background-position: center;
-      width: 150px;
-      height: 150px;
-      border-radius: 20px;
-    }
-    .product-title4 {
-      margin: 15px;
-      text-align: right;
-      font-size: 16px;
-    }
-    .product-image5 {
-      margin: 15px 15px;
-      background-image: url(./assets/images/morning.jpg);
-      background-size: cover;
-      background-position: center;
-      width: 150px;
-      height: 150px;
-      border-radius: 20px;
-    }
-    .product-title5 {
-      margin: 15px;
-      text-align: right;
-      font-size: 16px;
-    }
-    .product-image6 {
-      margin: 15px 15px;
-      background-image: url(./assets/images/smile.jpg);
-      background-size: cover;
-      background-position: center;
-      width: 150px;
-      height: 150px;
-      border-radius: 20px;
-    }
-    .product-title6 {
-      margin: 15px;
-      text-align: right;
-      font-size: 16px;
-    }
-    .product-image7 {
-      margin: 15px 15px;
-      background-image: url(./assets/images/tired.jpg);
-      background-size: cover;
-      background-position: center;
-      width: 150px;
-      height: 150px;
-      border-radius: 20px;
-    }
-    .product-title7 {
-      margin: 15px;
-      text-align: right;
-      font-size: 16px;
-    }
-    .product-image8 {
-      margin: 15px 15px;
-      /* background-image: url(./assets/images/tired.jpg); */
-      background-size: cover;
-      background-position: center;
-      width: 150px;
-      height: 150px;
-      border-radius: 20px;
-    }
-    .product-video {
-      border-radius: 20px;
-    }
-    .product-title8 {
-      margin: 15px;
-      text-align: right;
-      font-size: 16px;
-    }
-
-    /* footer */
-    .footer-container {
-      display: flex;
-      flex-direction: column;
-      background-color: rgb(241, 239, 231);
-      list-style: none;
-      align-items: center;
-      user-select: none;
-      align-items: center;
-    }
-    .footer-item {
-      padding: 10px;
-      padding-top: 20px;
-      align-self: center;
-      color: rgb(82, 82, 82);
-      font-size: 14px;
-    }
-  </style>
   <body>
     <nav>
       <ul class="nav-container">
         <li class="nav-item-logo">
-          <a href="./index.html"><img class="img-logo" src="./assets/images/yeobyshop_transbg_340_80.png" alt="Yeobyshop" /></a>
+          <a href="./index.html"
+            ><img class="img-logo" src="./assets/images/yeobyshop_transbg_340_80.png" alt="Yeobyshop"
+          /></a>
         </li>
         <li class="nav-item"><a href="./store.html">Store</a></li>
         <li class="nav-item"><a href="sms:01091850992?body=Yeobyshop 문의입니다.//">Contact</a></li>
@@ -239,7 +28,7 @@
           <a href="#"></a>
           <div class="product-image1"></div>
           <hr class="product-line" />
-          <p class="product-title1">재롱떠는 강인엽 모음</p>
+          <p class="product-title1">재롱떠는 강인엽 <br />모음</p>
         </div>
 
         <div class="item-container">
