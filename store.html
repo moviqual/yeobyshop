@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 브라우저 테마 색상 설정 -->
     <meta name="theme-color" content="#f1efe7" />
-    <link rel="shortcut icon" href=".//assets/images/yeobyshop.ico" />
+    <link rel="shortcut icon" href="./assets/images/yeobyshop.ico" />
     <link rel="stylesheet" href="style-store.css" />
     <title>Yeobyshop | Store</title>
   </head>
@@ -13,84 +12,166 @@
     <nav>
       <ul class="nav-container">
         <li class="nav-item-logo">
-          <a href="./index.html"
-            ><img class="img-logo" src="./assets/images/yeobyshop_transbg_340_80.png" alt="Yeobyshop"
-          /></a>
+          <a href="./index.html"><img class="img-logo" src="./assets/images/yeobyshop_transbg_340_80.png" alt="Yeobyshop" /></a>
         </li>
         <li class="nav-item"><a href="./store.html">Store</a></li>
         <li class="nav-item"><a href="sms:01091850992?body=Yeobyshop 문의입니다.//">Contact</a></li>
       </ul>
     </nav>
 
-    <main>
-      <div class="main-container">
-        <div class="item-container">
-          <a href="#"></a>
-          <div class="product-image1"></div>
-          <hr class="product-line" />
-          <p class="product-title1">재롱떠는 강인엽 <br />모음</p>
+    <main class="store-page">
+      <section class="store-hero">
+        <div>
+          <p class="eyebrow">YeobyShop • Signature Pieces</p>
+          <h1>여심과 남심을 동시에 자극하는 매력</h1>
+          <p>
+            제주를 떠나 경희대학교에서 박사과정을 밟고 있는 강인엽의 리얼 라이프를 소개합니다.
+            누구나 한 번쯤은 궁금해할 법한 그의 하루를 담아냈습니다.
+          </p>
         </div>
+        <button id="randomPickBtn" class="btn btn-primary" type="button">Curated Pick</button>
+      </section>
 
-        <div class="item-container">
-          <a href="#"></a>
-          <div class="product-image2"></div>
-          <hr class="product-line" />
-          <p class="product-title2">여자로 환생한<br />여혐러 인엽</p>
-        </div>
+      <p class="store-note" id="pickMessage">당신의 취향에 맞는 한 켠을 골라보세요.</p>
 
-        <div class="item-container">
-          <a href="#"></a>
-          <div class="product-image3"></div>
-          <hr class="product-line" />
-          <p class="product-title3">강인엽 성형 전 유출</p>
-        </div>
-        <div class="item-container">
-          <a href="#"></a>
-          <div class="product-image4"></div>
-          <hr class="product-line" />
-          <p class="product-title4">쁘인엽</p>
-        </div>
-        <div class="item-container">
-          <a href="#"></a>
-          <div class="product-image5"></div>
-          <hr class="product-line" />
-          <p class="product-title5">미라클 모닝 인엽이</p>
-        </div>
-        <div class="item-container">
-          <a href="#"></a>
-          <div class="product-image6"></div>
-          <hr class="product-line" />
-          <p class="product-title6">당일도축 뭉티기<br />기다리는 인엽이</p>
-        </div>
-        <div class="item-container">
-          <a href="#"></a>
-          <div class="product-image7"></div>
-          <hr class="product-line" />
-          <p class="product-title7">피곤한 대학원생<br />인엽이</p>
-        </div>
-        <div class="item-container">
-          <a href="#"></a>
-          <div class="product-image8">
-            <video
-              class="product-video"
-              width="150px"
-              height="150px"
-              src="./assets/images/damedane.mp4"
-              poster="./assets/images/girl.png"
-              controls
-              type="video/mp4"
-            ></video>
+      <section class="product-grid" id="productGrid">
+        <button class="shop-card" type="button" data-title="최애의 아이" data-desc="장소 제공: GS25 제주시청점" data-tag="Limited">
+          <div class="shop-card-image image-1"></div>
+          <div class="shop-card-body">
+            <span class="shop-card-tag">Limited</span>
+            <h3>최애의 아이</h3>
+            <p>그의 최애 애니메이션, "최애의 아이"에게 헌사하는 그의 춤사위</p>
           </div>
-          <hr class="product-line" />
-          <p class="product-title8">다메다네 엽쨩</p>
-        </div>
-      </div>
+        </button>
+
+        <button class="shop-card" type="button" data-title="아랫도리가 가벼운 그는 어떨까" data-desc="남성 팬들의 수많은 요청에 보답합니다." data-tag="New Arrival">
+          <div class="shop-card-image image-2"></div>
+          <div class="shop-card-body">
+            <span class="shop-card-tag">New Arrival</span>
+            <h3>아랫도리가 가벼운 그는 어떨까</h3>
+            <p>여심과 남심을 동시에 자극하지만, 그의 한계는 남성이라는 것</p>
+          </div>
+        </button>
+
+        <button class="shop-card" type="button" data-title="Yeop:Shota" data-desc="미니멀, 큐트, 목 조르고 싶은" data-tag="Bestseller">
+          <div class="shop-card-image image-3"></div>
+          <div class="shop-card-body">
+            <span class="shop-card-tag">Bestseller</span>
+            <h3>Yeop:Shota</h3>
+            <p>어린 인엽은 취향차이</p>
+          </div>
+        </button>
+
+        <button class="shop-card" type="button" data-title="VV" data-desc="앞에 놓인 소주, 그리고 씨발 좆되는 안주" data-tag="Editorial">
+          <div class="shop-card-image image-4"></div>
+          <div class="shop-card-body">
+            <span class="shop-card-tag">Editorial</span>
+            <h3>VV</h3>
+            <p>그를 설레게 하는 것</p>
+          </div>
+        </button>
+
+        <button class="shop-card" type="button" data-title="자기야 벌써 일어났어?" data-desc="나 왜 나체야?" data-tag="Essentials">
+          <div class="shop-card-image image-5"></div>
+          <div class="shop-card-body">
+            <span class="shop-card-tag">Essentials</span>
+            <h3>자기야 벌써 일어났어?</h3>
+            <p>거침없는 화려함보다 오래 남는 편안함</p>
+          </div>
+        </button>
+
+        <button class="shop-card" type="button" data-title="무엇이든 익혀먹어야 합니다" data-desc="혀마중은 모두에게 비호감입니다. 하지만 인엽이라면 모르죠. 마중 나온 혀와 당신의 혀가 악수를 할 지." data-tag="Exclusive">
+          <div class="shop-card-image image-6"></div>
+          <div class="shop-card-body">
+            <span class="shop-card-tag">Exclusive</span>
+            <h3>무엇이든 익혀먹어야 합니다</h3>
+            <p>하지만 생고기를 마주하면 혀가 마중나오죠</p>
+          </div>
+        </button>
+
+        <button class="shop-card" type="button" data-title="치해떠 후잉" data-desc="하지만 곁눈질로 당신과 단 둘이 남기를 기대하고 있을지도 모릅니다." data-tag="Studio">
+          <div class="shop-card-image image-7"></div>
+          <div class="shop-card-body">
+            <span class="shop-card-tag">Studio</span>
+            <h3>치해떠 후잉</h3>
+            <p>바쁜 일상 끝에 마주한 술자리에서 의식을 잃었어요</p>
+          </div>
+        </button>
+
+        <button class="shop-card" type="button" data-title="딥페이크 경고" data-desc="걸리면 ㅆㅂ 한라일보를 통해 신상공개를 진행토록 하겠습니다." data-tag="Visual">
+          <div class="shop-card-image video-card">
+            <video class="product-video" src="./assets/images/damedane.mp4" poster="./assets/images/girl.png" controls preload="metadata"></video>
+          </div>
+          <div class="shop-card-body">
+            <span class="shop-card-tag">Visual</span>
+            <h3>딥페이크 경고</h3>
+            <p>당사 아티스트의 사진을 AI 생성 컨텐츠로 남용하는 사례가 늘고있습니다.</p>
+          </div>
+        </button>
+      </section>
     </main>
+
+    <div class="modal" id="productModal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" id="modalClose" type="button" aria-label="닫기">×</button>
+        <p class="eyebrow">Selected Piece</p>
+        <h2 id="modalTitle">Product Title</h2>
+        <p id="modalDescription">Description</p>
+        <p class="modal-tag" id="modalTag">Tag</p>
+      </div>
+    </div>
 
     <footer>
       <ul class="footer-container">
-        <li class="footer-item">copyright ⓒ 강인엽 all rights resvered.</li>
+        <li class="footer-item">copyright ⓒ 강인엽 all rights reserved.</li>
       </ul>
     </footer>
+
+    <script>
+      const modal = document.getElementById('productModal');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalDescription = document.getElementById('modalDescription');
+      const modalTag = document.getElementById('modalTag');
+      const closeBtn = document.getElementById('modalClose');
+      const cards = document.querySelectorAll('.shop-card');
+      const randomBtn = document.getElementById('randomPickBtn');
+      const pickMessage = document.getElementById('pickMessage');
+
+      cards.forEach((card) => {
+        card.addEventListener('click', () => {
+          modalTitle.textContent = card.dataset.title;
+          modalDescription.textContent = card.dataset.desc;
+          modalTag.textContent = card.dataset.tag;
+          modal.classList.add('active');
+          modal.setAttribute('aria-hidden', 'false');
+        });
+      });
+
+      function closeModal() {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+      }
+
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          closeModal();
+        }
+      });
+
+      randomBtn.addEventListener('click', () => {
+        const randomCard = cards[Math.floor(Math.random() * cards.length)];
+        cards.forEach((card) => card.classList.remove('is-picked'));
+        randomCard.classList.add('is-picked');
+        pickMessage.textContent = `${randomCard.dataset.title}를 추천합니다!`;
+        setTimeout(() => randomCard.classList.remove('is-picked'), 1800);
+      });
+    </script>
   </body>
 </html>

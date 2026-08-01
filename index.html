@@ -3,97 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 브라우저 테마 색상 설정 -->
     <meta name="theme-color" content="#f1efe7" />
-    <link rel="shortcut icon" href=".//assets/images/yeobyshop.ico" />
-
-    <!-- 카카오톡 메타 -->
+    <link rel="shortcut icon" href="./assets/images/yeobyshop.ico" />
     <meta property="og:url" content="https://moviqual.github.io/yeobyshop/index.html" />
     <meta property="og:title" content="Yeoby Shop | 여비샵" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://yeobyshop.000webhostapp.com/yeobyshop.png" />
     <meta property="og:description" content="마법소녀 강인엽 굿즈샵" />
     <title>Yeobyshop</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
-      * {
-        margin: 0;
-        padding: 0;
-        -webkit-tap-highlight-color: transparent;
-      }
-      html {
-        font-family: 'Nanum Gothic', sans-serif;
-        font-size: 18px;
-        background-color: rgb(241, 239, 231);
-      }
-
-      /* nav */
-      nav {
-        position: sticky;
-        top: 0px;
-      }
-      .nav-container {
-        display: flex;
-        background-color: rgb(241, 239, 231);
-        list-style: none;
-        align-items: center;
-        user-select: none;
-      }
-      .nav-item {
-        padding: 15px 25px;
-        cursor: pointer;
-        transition: 0.5s ease-out;
-      }
-      .nav-item a {
-        text-align: center;
-        text-decoration: none;
-        color: black;
-      }
-      .nav-item:hover {
-        background-color: rgb(207, 206, 199);
-      }
-      .nav-item-logo {
-        padding: 10px 25px;
-        transition: 0.1s ease-out;
-      }
-      .nav-item-logo:hover {
-        background-color: rgb(255, 83, 203);
-      }
-      .img-logo {
-        width: 120px;
-      }
-
-      /* main */
-      .main-container {
-        padding: 8vw 8vh;
-        display: flex;
-        flex-direction: column;
-        height: 55vh;
-        background: url('./assets/images/yeop.jpg') no-repeat center;
-        background-size: cover;
-
-        color: white;
-        text-shadow: 1px 1px 5px black;
-        /* background-attachment: fixed; */
-      }
-
-      /* footer */
-      .footer-container {
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(241, 239, 231);
-        list-style: none;
-        align-items: center;
-        user-select: none;
-      }
-      .footer-copyright {
-        padding: 10px;
-        padding-top: 20px;
-        align-self: center;
-        color: rgb(82, 82, 82);
-        font-size: 14px;
-      }
-    </style>
+    <link rel="stylesheet" href="style-store.css" />
   </head>
   <body>
     <nav>
@@ -106,13 +24,29 @@
       </ul>
     </nav>
 
-    <main>
-      <div class="main-container"></div>
+    <main class="home-page">
+      <section class="hero">
+        <div class="hero-visual">
+          <img src="./assets/images/yeop.jpg" alt="강인엽 캐릭터" />
+          <div class="hero-overlay">
+            <p class="eyebrow">YeobyShop • Luxury Lifestyle</p>
+            <h1>여심과 남심을 동시에 자극하는 매력</h1>
+            <p class="hero-text">
+            제주를 떠나 경희대학교에서 박사과정을 밟고 있는 강인엽의 리얼 라이프를 소개합니다.
+            누구나 한 번쯤은 궁금해할 법한 그의 하루를 담아냈습니다.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="./store.html">View Collection</a>
+              <a class="btn btn-secondary" href="sms:01091850992?body=Yeobyshop 문의입니다.//">Contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
       <ul class="footer-container">
-        <li class="footer-copyright">copyright ⓒ 강인엽 all rights resvered.</li>
+        <li class="footer-item">copyright ⓒ 강인엽 all rights reserved.</li>
       </ul>
     </footer>
   </body>
